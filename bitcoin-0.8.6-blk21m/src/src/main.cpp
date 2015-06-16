@@ -2201,6 +2201,11 @@ bool CBlock::AcceptBlock(CValidationState &state, CDiskBlockPos *dbp)
         if (!Checkpoints::CheckBlock(nHeight, hash))
             return state.DoS(100, error("AcceptBlock() : rejected by checkpoint lock-in at %d", nHeight));
 
+				/*** REMOVE ALL THE CHECK ON BLOCK VERSION ***/
+				// Will figure out another day what miner to use.
+				// - Theo - Sep 25, 2015
+				
+				/*
         // Reject block.nVersion=1 blocks when 95% (75% on testnet) of the network has upgraded:
         if (nVersion < 2)
         {
@@ -2223,6 +2228,7 @@ bool CBlock::AcceptBlock(CValidationState &state, CDiskBlockPos *dbp)
                     return state.DoS(100, error("AcceptBlock() : block height mismatch in coinbase"));
             }
         }
+        */
     }
 
     // Write block to history file
