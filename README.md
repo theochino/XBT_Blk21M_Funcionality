@@ -4,6 +4,9 @@ The 21 Millions of Fake BTC are already used. Just send me your address and I se
 The goal is to test the functionality without using regular adresses and avoid the need to 
 use IF to toggle between the TestNet and the RealNet.
 
+The Blocks are mined every 2 minutes.
+This is just a modified version bitcoin-0.8.6
+
 The Server where you can connect is : 5.135.152.161
 Port # are 9725 & 9726
 
